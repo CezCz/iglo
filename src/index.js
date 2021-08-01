@@ -37,7 +37,7 @@ ReactDOM.render(
                 <Box
                     sx={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gridTemplateColumns: 'repeat(5, 1fr)',
                         gap: 2,
                         gridTemplateRows: 'auto',
                         gridTemplateAreas: `"header header header header header"
