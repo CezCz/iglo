@@ -41,7 +41,7 @@ ReactDOM.render(
                         gap: 2,
                         gridTemplateRows: 'auto',
                         gridTemplateAreas: `"header header header header"
-                                    "sidebar main main main"
+                                    "sidebar main main main main"
                                     "footer footer footer footer"`,
                     }}
                 >
