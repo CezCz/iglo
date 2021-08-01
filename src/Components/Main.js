@@ -71,7 +71,7 @@ const Main = () => {
                     Grupy alfabetycznie później komentują Cezary Czernecki 4 dan oraz gracze z grupy A i B.
                 </Box>
                 <Box>
-                    W każdym sezonie odbywają się conajmniej dwa wykłady tematyczne.
+                    W każdym sezonie odbywają się co najmniej dwa wykłady tematyczne.
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'space-around'}}>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/qXTiUHnjgow"
