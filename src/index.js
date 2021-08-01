@@ -40,9 +40,9 @@ ReactDOM.render(
                         gridTemplateColumns: 'repeat(4, 1fr)',
                         gap: 2,
                         gridTemplateRows: 'auto',
-                        gridTemplateAreas: `"header header header header"
+                        gridTemplateAreas: `"header header header header header"
                                     "sidebar main main main main"
-                                    "footer footer footer footer"`,
+                                    "footer footer footer footer footer"`,
                     }}
                 >
                     <Box sx={{textAlign: 'center', gridArea: 'header', padding: '20px', typography: 'header'}}>
