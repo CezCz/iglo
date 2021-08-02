@@ -15,15 +15,20 @@ const Main = () => {
     const activeTab = useRecoilValue(activeTabState);
     return <>
         <TabPanel value={activeTab} index={0}>
-            <Typography variant={'h4'} gutterBottom>Co to iglo?</Typography>
+            <Typography variant={'h4'} gutterBottom>
+                Czym jest iglo?</Typography>
             <Box sx={{typography: 'body1'}}>
                 IGLO jest koleżeńską ligą dla entuzjastów Go. Ma na celu budowanie relacji z innymi graczami i
                 zwiększeniu
                 poziomu gry. To okazja do regularnego grania dłuższych gier oraz do uzyskania komentarza od silnych
                 graczy.
             </Box>
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Box sx={{display: 'flex', flexDirection: "column", alignItems: 'center'}}>
                 <img src={iglo} width={"300px"} alt="IGLO!"/>
+                <Typography sx={{fontSize: "8px"}} variant="caption" display="block" gutterBottom>
+                    Logo made Kim Ouweleen aka&nbsp;
+                    <Link href="https://www.murugandi.com/" target="_blank">Murugandi</Link>
+                </Typography>
             </Box>
             <Box sx={{typography: 'body1'}}>
                 <Typography component="div" variant={'h4'}>Zasady</Typography>
@@ -33,8 +38,8 @@ const Main = () => {
                         dzień.
                         Gracz, któremu wyznaczony termin nie odpowiada, musi grę przełożyć!
                     </li>
-                    <li>Minimum czas gry to 30m+3x30. Zalecany 40m+3x30. Zachęcamy do przedłużenia czasu!</li>
-                    <li>Gramy na KGS w Polskim Pokoju</li>
+                    <li>Minimalny czas gry to 30m+3x30. Zalecany 40m+3x30. Zachęcamy do przedłużenia czasu!</li>
+                    <li>Gramy na <Link href="https://www.gokgs.com/">KGS</Link> w Polskim Pokoju</li>
                 </ul>
                 <Typography variant={'h4'} gutterBottom>Zapisy</Typography>
                 <Typography component="div" gutterBottom>
@@ -93,7 +98,8 @@ const Main = () => {
                              alt={"Patronite"}/>
                         do wpłat w PLN
                     </Link>
-                    <Link href="https://patreon.com/igloooo" target="_blank" sx={{display: 'flex', alignItems: 'center'}}>
+                    <Link href="https://patreon.com/igloooo" target="_blank"
+                          sx={{display: 'flex', alignItems: 'center'}}>
                         <img src={patreon}
                              width="200px"
                              alt={"Patronite"}/>
