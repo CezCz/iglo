@@ -1,7 +1,7 @@
 {
   "name": "iglo",
   "version": "0.1.0",
-  "homepage": "https://cezcz.github.io/iglo/",
+  "homepage": "https://iglo.go.art.pl",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.0",
