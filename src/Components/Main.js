@@ -26,7 +26,7 @@ const Main = () => {
             <Box sx={{display: 'flex', flexDirection: "column", alignItems: 'center'}}>
                 <img src={iglo} width={"300px"} alt="IGLO!"/>
                 <Typography sx={{fontSize: "8px"}} variant="caption" display="block" gutterBottom>
-                    Logo made Kim Ouweleen aka&nbsp;
+                    Logo made by Kim Ouweleen aka&nbsp;
                     <Link href="https://www.murugandi.com/" target="_blank">Murugandi</Link>
                 </Typography>
             </Box>
