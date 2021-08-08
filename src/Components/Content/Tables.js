@@ -5,7 +5,7 @@ import Link from "@material-ui/core/Link";
 const Tables = () => {
   return (
     <>
-      <Link href="https://docs.google.com/spreadsheets/d/1Be7XNZ9BaCTK_uxmuyh32yrcYhMbHDT9YaWBCz8tW94/edit?usp=sharing">
+      <Link href="https://docs.google.com/spreadsheets/d/1Be7XNZ9BaCTK_uxmuyh32yrcYhMbHDT9YaWBCz8tW94/edit">
         Link do arkusza (edycja)
       </Link>
       <CardMedia

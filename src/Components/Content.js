@@ -1,24 +1,18 @@
 import React from "react";
-import Tables from "./Tables";
-import { activeTabState } from "../index";
-import { useRecoilValue } from "recoil";
-import TabPanel from "./TabPanel";
-import Home from "./Home";
-import Archive from "./Archive";
+import Tables from "./Content/Tables";
+import Home from "./Content/Home";
+import Rules from "./Content/Rules";
+import { Route, Switch } from "react-router-dom";
 
 const Content = () => {
-  const activeTab = useRecoilValue(activeTabState);
   return (
     <>
-      <TabPanel value={activeTab} index={0}>
-        <Home />
-      </TabPanel>
-      <TabPanel value={activeTab} index={1}>
-        <Tables />
-      </TabPanel>
-      <TabPanel value={activeTab} index={2}>
-        <Archive />
-      </TabPanel>
+      <Switch>
+        <Route exact path={"/"} component={Home} />
+        <Route path={"/tables"} component={Tables} />
+        <Route path={"/rules"} component={Rules} />
+        {/*<Route path={"/archive"} component={Archive} />*/}
+      </Switch>
     </>
   );
 };

@@ -1,26 +1,22 @@
 import React from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import { activeTabState } from "../index";
-import { useRecoilState } from "recoil";
+import { Link, useRouteMatch } from "react-router-dom";
 
 const Navigation = () => {
-  const [activeTab, setValue] = useRecoilState(activeTabState);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+  const routeMatch = useRouteMatch(["/tables", "/rules", "/"]);
+  const currentTab = routeMatch?.path;
   return (
     <Tabs
       orientation="vertical"
+      value={currentTab}
       variant="scrollable"
-      value={activeTab}
-      onChange={handleChange}
       aria-label="Menu"
     >
-      <Tab label="Strona główna" />
-      <Tab label="Tabele" />
-      <Tab label="Archiwum" />
+      <Tab label="Strona główna" value={"/"} component={Link} to={"/"} />
+      <Tab label="Tabele" value={"/tables"} component={Link} to={"/tables"} />
+      <Tab label="Regulamin" value={"/rules"} component={Link} to={"/rules"} />
+      {/*<Tab label="Archiwum" />*/}
     </Tabs>
   );
 };

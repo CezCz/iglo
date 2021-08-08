@@ -6,6 +6,7 @@ import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import { Box, createTheme, ThemeProvider, Typography } from "@material-ui/core";
 import { atom, RecoilRoot } from "recoil";
+import { BrowserRouter } from "react-router-dom";
 
 let theme = createTheme({
   palette: {
@@ -32,41 +33,43 @@ export const activeTabState = atom({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <RecoilRoot>
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(6, 1fr)",
-            gap: 2,
-            gridTemplateRows: "auto",
-            gridTemplateAreas: `"header header header header header header"
-                                    "sidebar main main main main main"
-                                    "footer footer footer footer footer footer"`,
-          }}
-        >
+      <BrowserRouter>
+        <RecoilRoot>
           <Box
             sx={{
-              textAlign: "center",
-              gridArea: "header",
-              padding: "20px",
-              typography: "header",
+              display: "grid",
+              gridTemplateColumns: "repeat(6, 1fr)",
+              gap: 2,
+              gridTemplateRows: "auto",
+              gridTemplateAreas: `"header header header header header header"
+                                    "sidebar main main main main main"
+                                    "footer footer footer footer footer footer"`,
             }}
           >
-            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-              Internetowa Go Liga O!
-            </Typography>
+            <Box
+              sx={{
+                textAlign: "center",
+                gridArea: "header",
+                padding: "20px",
+                typography: "header",
+              }}
+            >
+              <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+                Internetowa Go Liga O!
+              </Typography>
+            </Box>
+            <Box sx={{ gridArea: "sidebar" }}>
+              <Navigation />
+            </Box>
+            <Box sx={{ gridArea: "main" }}>
+              <Content />
+            </Box>
+            <Box sx={{ gridArea: "footer", p: 3 }}>
+              <Footer />
+            </Box>
           </Box>
-          <Box sx={{ gridArea: "sidebar" }}>
-            <Navigation />
-          </Box>
-          <Box sx={{ gridArea: "main" }}>
-            <Content />
-          </Box>
-          <Box sx={{ gridArea: "footer", p: 3 }}>
-            <Footer />
-          </Box>
-        </Box>
-      </RecoilRoot>
+        </RecoilRoot>
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

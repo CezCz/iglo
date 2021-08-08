@@ -1,10 +1,10 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import iglo from "../assets/iglo.png";
+import iglo from "../../assets/iglo.png";
 import Link from "@material-ui/core/Link";
-import patronite from "../assets/patronite.png";
-import patreon from "../assets/patreon.png";
+import patronite from "../../assets/patronite.png";
+import patreon from "../../assets/patreon.png";
 
 const Home = () => {
   return (
@@ -135,6 +135,43 @@ const Home = () => {
             <img src={patreon} width="200px" alt={"Patronite"} />
             do wpłat w EUR
           </Link>
+        </Box>
+        <Box>
+          <Typography variant={"h4"} gutterBottom>
+            Ważne linki:
+          </Typography>
+          <ul>
+            <li>
+              <Link
+                href={
+                  "https://www.youtube.com/channel/UCXsGC1hVUqZ-JUjzfdSHYDQ"
+                }
+              >
+                IGLO
+              </Link>{" "}
+              - Wykłady i komentarze Stasia i Lukana. Komentarze dla grup A i B
+            </li>
+            <li>
+              <Link
+                href={
+                  "https://www.youtube.com/channel/UCMgifrUqkfO58qVdvfs4xkg"
+                }
+              >
+                IGLO Plus
+              </Link>{" "}
+              - Wykłady Cezarego i innych. Komentarze dla grup C i dalszych
+              alfabetycznie :)
+            </li>
+            <li>
+              <Link
+                href={
+                  "https://docs.google.com/spreadsheets/d/1Be7XNZ9BaCTK_uxmuyh32yrcYhMbHDT9YaWBCz8tW94/edit#gid=411784956"
+                }
+              >
+                Arkusz IGLO
+              </Link>
+            </li>
+          </ul>
         </Box>
       </Box>
     </>
