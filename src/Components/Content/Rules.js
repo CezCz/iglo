@@ -68,7 +68,7 @@ const Rules = () => {
               Nowo zapisany gracz, zaczyna w grupie z graczami o podobnej sile.
             </li>
             <li>
-              Na początku gry należy zaznaczyć, że jest do gra do ligi IGLO
+              Na początku gry należy zaznaczyć, że jest to gra do ligi IGLO
               (napisać IGLO w czacie gry).
             </li>
             <li>
@@ -91,11 +91,11 @@ const Rules = () => {
               dwuargumentowe działanie wewnętrzne ;).
               <ul>
                 <li>
-                  Kształt grupy (ilośc osób) ustalany jest na początku sezonu i
+                  Kształt grupy (liczba osób) ustalany jest na początku sezonu i
                   może się zmienić
                 </li>
                 <li>
-                  Grupa może rozgrywana na zasadach:
+                  Grupa może być rozgrywana na zasadach:
                   <ul>
                     <li>Ligi</li>
                     <li>Pucharu</li>
@@ -105,7 +105,7 @@ const Rules = () => {
               </ul>
             </li>
             <li>
-              Standardowo wszystkie grupy to k osobowe Ligi z ostatnią grupą
+              Standardowo wszystkie grupy to n osobowe Ligi z ostatnią grupą
               grającą turniej na zasadach szwajcarskich
             </li>
             <li>
@@ -135,7 +135,7 @@ const Rules = () => {
                 <li>
                   Dla Ligi:
                   <ul>
-                    <li>Ilość zwycięstw</li>
+                    <li>Liczba zwycięstw</li>
                     <li>SODOS</li>
                     <li>DC</li>
                     <li>Pozycja startowa</li>
@@ -164,8 +164,8 @@ const Rules = () => {
                 </li>
                 <li>
                   Awans i spadek nie są gwarantowane. Na przykład zasady grup
-                  mogą się zmienić między sezonami (ilośćgraczy w grupie). Mogą
-                  zapisać lub zrezygnować gracze, róźnie to wychodzi :).
+                  mogą się zmienić między sezonami (liczba graczy w grupie). Mogą
+                  zapisać się lub zrezygnować gracze, różnie to wychodzi :).
                 </li>
               </ul>
             </li>
