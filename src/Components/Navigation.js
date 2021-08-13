@@ -16,7 +16,7 @@ const Navigation = () => {
       <Tab label="Strona główna" value={"/"} component={Link} to={"/"} />
       <Tab label="Tabele" value={"/tables"} component={Link} to={"/tables"} />
       <Tab label="Regulamin" value={"/rules"} component={Link} to={"/rules"} />
-      {/*<Tab label="Archiwum" />*/}
+      <Tab label="Archiwum" value={"/archives"} component={Link} to={"/archives"} />
     </Tabs>
   );
 };
