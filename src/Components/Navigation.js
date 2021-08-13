@@ -4,7 +4,7 @@ import Tab from "@material-ui/core/Tab";
 import { Link, useRouteMatch } from "react-router-dom";
 
 const Navigation = () => {
-  const routeMatch = useRouteMatch(["/tables", "/rules", "/"]);
+  const routeMatch = useRouteMatch(["/archives", "/tables", "/rules", "/"]);
   const currentTab = routeMatch?.path;
   return (
     <Tabs
