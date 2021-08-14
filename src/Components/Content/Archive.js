@@ -24,7 +24,7 @@ const Archive = () => {
                 {league.tables.map((table) => {
                   return (
                     <Box
-                      px={4}
+                      px={2}
                       py={1}
                       display={"block"}
                       key={league.startDate + table.name}
